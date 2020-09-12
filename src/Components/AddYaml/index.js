@@ -52,16 +52,10 @@ export default function FullWidthGrid(props) {
       [name]: value,
     }));
     props.data(Yaml.parse(value));
-    localStorage.setItem("data", value == "" ? localStorage.data : value);
   };
 
   const handleClick = () => {
-    var e = { target: {} };
-    e.target = {
-      name: "payload",
-      value: localStorage.data,
-    };
-    handleChange(e);
+    localStorage.setItem("data","xyz");
   };
 
   const handleClick2 = () => {
@@ -90,16 +84,15 @@ export default function FullWidthGrid(props) {
           <div>
             {data.payload == "" ? (
               <Chip
-              clickable
-              avatar={<ReplayIcon />}
-              label="Example for Job Portal"
-              onClick={handleClick2}
-              variant="outlined"
-            />
+                clickable
+                avatar={<ReplayIcon />}
+                label="Example for Job Portal"
+                onClick={handleClick2}
+                variant="outlined"
+              />
             ) : (
               ""
             )}
-            
           </div>
         </Grid>
       </Grid>

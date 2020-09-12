@@ -72,3 +72,8 @@ section.cover .content .card:hover{
   width: 40vw;
 
 }
+.box:hover{
+  background: cornsilk;
+  color: slategray;
+ cursor: wait;
+}
