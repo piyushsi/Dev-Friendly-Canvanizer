@@ -38,7 +38,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FullWidthGrid(props) {
   const classes = useStyles();
-
+  const [defaultData, setDefaultData] = React.useState(
+    "Problem:\n- Hard to find a suitable employee\n- Hard to find a suitable job\n- Complicated Interview Problems \n- Existing Alternatives:\n- Angel\n- Hirist\nSolution:\n- Develop a technology that allows both employee and employer to find relevant Job/Employee\nKey Metrics:\n- A Logical implemented CV\n- Online Interview Features with coding Assessment\nUnique Value Proposition:\n- Users can truly find what they're looking for\n- Skills will help to get Job for Employee\n- High Level Concept:\n- Need to use the good backend to  Show Real-Time Data for interview features\nUnfair Advantage:\n- Innovation\nChannels:\n- User References\nCustomer Segment:\n- All Employee/Employeer/Students\n- Early Adopters:\n- People from Corona  affected  Area\nCost Structure:\n- Hosting\n- Development\n- Marketing\nRevenue Streams:\n- Investment\n- Advertising\n- Staffing firm (b2b)"
+  );
   const [data, setData] = React.useState({
     payload: "",
   });
@@ -62,6 +64,15 @@ export default function FullWidthGrid(props) {
     handleChange(e);
   };
 
+  const handleClick2 = () => {
+    var e = { target: {} };
+    e.target = {
+      name: "payload",
+      value: defaultData,
+    };
+    handleChange(e);
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.toolbar} />
@@ -76,19 +87,20 @@ export default function FullWidthGrid(props) {
             placeholder="Input YAML format in Title Case"
             value={data.payload}
           />
-          {data.payload == "" ? (
-            <div>
+          <div>
+            {data.payload == "" ? (
               <Chip
-                clickable
-                avatar={<ReplayIcon />}
-                label="undo"
-                onClick={handleClick}
-                variant="outlined"
-              />
-            </div>
-          ) : (
-            ""
-          )}
+              clickable
+              avatar={<ReplayIcon />}
+              label="Example for Job Portal"
+              onClick={handleClick2}
+              variant="outlined"
+            />
+            ) : (
+              ""
+            )}
+            
+          </div>
         </Grid>
       </Grid>
     </div>
