@@ -3,8 +3,8 @@ import Header from "./Components/Common/Header";
 import LeanCanvas from "./Components/LeanCanvas";
 import AddYaml from "./Components/AddYaml/index";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import HomePage from "./Components/HomePage.js"
-import './App.css'
+import HomePage from "./Components/HomePage.js";
+import "./App.css";
 
 function App() {
   const [isYaml, setIsYaml] = React.useState(false);
@@ -13,9 +13,10 @@ function App() {
       <BrowserRouter>
         <Header data={isYaml} />
         <Switch>
-        <Route
+          <Route exact path="/" render={(props) => <HomePage {...props} />} />
+          <Route
             exact
-            path="/"
+            path="/Dev-Friendly-Canvanizer"
             render={(props) => <HomePage {...props} />}
           />
           <Route

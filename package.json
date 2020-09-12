@@ -2,7 +2,7 @@
   "name": "dev_friendly_canvanizer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://piyushsi.github.io/Dev-Friendly-Canvanizer",
+  "homepage": "http://piyushsi.github.io/Dev-Friendly-Canvanizer",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
