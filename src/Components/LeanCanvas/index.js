@@ -12,7 +12,6 @@ import PersonIcon from "@material-ui/icons/Person";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import EuroIcon from "@material-ui/icons/Euro";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -57,16 +56,14 @@ export default function FullWidthGrid(props) {
   const child = (data) => {
     return data && data[0] ? (
       data.map((value) => {
-        return !value || typeof value === "string" ? (
+        return !value || typeof value === "string" || value[0] ? (
           <div>- {value ? value : ""}</div>
         ) : (
           <>
             <div className={classes.head + " " + classes.node}>
               {Object.keys(value)[0]}
             </div>
-            {Object.values(value)[0].map((el) => (
-              <div>- {el}</div>
-            ))}
+            {Object.values(value)[0] ? child(Object.values(value)[0]) : ""}
           </>
         );
       })
@@ -87,7 +84,8 @@ export default function FullWidthGrid(props) {
             >
               <div className={classes.head}>
                 {" "}
-                <HttpsIcon /><br/>
+                <HttpsIcon />
+                <br />
                 Problem
               </div>
               {child(data["Problem"])}
@@ -99,7 +97,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#FF9A00", color: "#fff" }}
             >
               <div className={classes.head}>
-                <LockOpenIcon /><br/>
+                <LockOpenIcon />
+                <br />
                 Solution
               </div>
               {child(data["Solution"])}
@@ -109,7 +108,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#FC6B28", color: "#fff" }}
             >
               <div className={classes.head}>
-                <RedeemIcon /><br/>
+                <RedeemIcon />
+                <br />
                 Key Metrics
               </div>
               {child(data["Key Metrics"])}
@@ -121,7 +121,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#00AB45", color: "#fff" }}
             >
               <div className={classes.head}>
-                <EqualizerIcon /><br/>
+                <EqualizerIcon />
+                <br />
                 Unique Value Proposition
               </div>
               {child(data["Unique Value Proposition"])}
@@ -133,7 +134,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#7FD02D", color: "#fff" }}
             >
               <div className={classes.head}>
-                <StarsIcon /><br/>
+                <StarsIcon />
+                <br />
                 Unfair Advantage
               </div>
               {child(data["Unfair Advantage"])}
@@ -143,7 +145,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#00B9A9", color: "#fff" }}
             >
               <div className={classes.head}>
-                <OpenWithIcon /><br/>
+                <OpenWithIcon />
+                <br />
                 Channels
               </div>
               {child(data["Channels"])}
@@ -155,7 +158,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#55D1E5", color: "#fff" }}
             >
               <div className={classes.head}>
-                <PersonIcon /><br/>
+                <PersonIcon />
+                <br />
                 Customer Segment
               </div>
               {child(data["Customer Segment"])}
@@ -167,7 +171,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#2151CD", color: "#fff" }}
             >
               <div className={classes.head}>
-                <LocalOfferIcon /><br/>
+                <LocalOfferIcon />
+                <br />
                 Cost Structure
               </div>
               {child(data["Cost Structure"])}
@@ -179,7 +184,8 @@ export default function FullWidthGrid(props) {
               style={{ background: "#00728C", color: "#fff" }}
             >
               <div className={classes.head}>
-                <EuroIcon /><br/>
+                <EuroIcon />
+                <br />
                 Revenue Streams
               </div>
               {child(data["Revenue Streams"])}

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Dev-Friendly-Canvanizer/static/css/main.53564032.chunk.css",
-    "main.js": "/Dev-Friendly-Canvanizer/static/js/main.a9e47e7e.chunk.js",
-    "main.js.map": "/Dev-Friendly-Canvanizer/static/js/main.a9e47e7e.chunk.js.map",
+    "main.js": "/Dev-Friendly-Canvanizer/static/js/main.a2608be6.chunk.js",
+    "main.js.map": "/Dev-Friendly-Canvanizer/static/js/main.a2608be6.chunk.js.map",
     "runtime-main.js": "/Dev-Friendly-Canvanizer/static/js/runtime-main.1057c131.js",
     "runtime-main.js.map": "/Dev-Friendly-Canvanizer/static/js/runtime-main.1057c131.js.map",
     "static/js/2.662f72e9.chunk.js": "/Dev-Friendly-Canvanizer/static/js/2.662f72e9.chunk.js",
     "static/js/2.662f72e9.chunk.js.map": "/Dev-Friendly-Canvanizer/static/js/2.662f72e9.chunk.js.map",
     "index.html": "/Dev-Friendly-Canvanizer/index.html",
-    "precache-manifest.85b345dd1e8ada854145e38966d25a5e.js": "/Dev-Friendly-Canvanizer/precache-manifest.85b345dd1e8ada854145e38966d25a5e.js",
+    "precache-manifest.80f54b01c48313a37da2200277b326f9.js": "/Dev-Friendly-Canvanizer/precache-manifest.80f54b01c48313a37da2200277b326f9.js",
     "service-worker.js": "/Dev-Friendly-Canvanizer/service-worker.js",
     "static/css/main.53564032.chunk.css.map": "/Dev-Friendly-Canvanizer/static/css/main.53564032.chunk.css.map",
     "static/js/2.662f72e9.chunk.js.LICENSE.txt": "/Dev-Friendly-Canvanizer/static/js/2.662f72e9.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1057c131.js",
     "static/js/2.662f72e9.chunk.js",
     "static/css/main.53564032.chunk.css",
-    "static/js/main.a9e47e7e.chunk.js"
+    "static/js/main.a2608be6.chunk.js"
   ]
 }
