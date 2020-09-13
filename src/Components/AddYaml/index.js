@@ -6,6 +6,8 @@ import Yaml from "yamljs";
 import ReplayIcon from "@material-ui/icons/Replay";
 import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
+import ViewCompactIcon from "@material-ui/icons/ViewCompact";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,7 +57,7 @@ export default function FullWidthGrid(props) {
   };
 
   const handleClick = () => {
-    localStorage.setItem("data","xyz");
+    localStorage.setItem("data", "xyz");
   };
 
   const handleClick2 = () => {
@@ -70,6 +72,17 @@ export default function FullWidthGrid(props) {
   return (
     <div className={classes.root}>
       <div className={classes.toolbar} />
+      {data.payload == "" ? (
+        <Chip
+          clickable
+          avatar={<ReplayIcon />}
+          label="Example for Job Portal"
+          onClick={handleClick2}
+          variant="outlined"
+        />
+      ) : (
+        ""
+      )}
       <Grid container>
         <Grid item xs={10} sm={10}>
           <TextareaAutosize
@@ -82,14 +95,17 @@ export default function FullWidthGrid(props) {
             value={data.payload}
           />
           <div>
-            {data.payload == "" ? (
-              <Chip
-                clickable
-                avatar={<ReplayIcon />}
-                label="Example for Job Portal"
-                onClick={handleClick2}
-                variant="outlined"
-              />
+            {data.payload != "" ? (
+              <Link style={{textDecoration:"none"}} to='/model'>
+                {" "}
+                <Chip
+                  clickable
+                  avatar={<ViewCompactIcon />}
+                  label="Lean Canvas"
+                  onClick={handleClick2}
+                  variant="outlined"
+                />
+              </Link>
             ) : (
               ""
             )}
