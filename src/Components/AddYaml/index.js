@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 export default function FullWidthGrid(props) {
   const classes = useStyles();
   const [defaultData, setDefaultData] = React.useState(
-    "Problem:\n- Hard to find a suitable employee\n- Hard to find a suitable job\n- Complicated Interview Problems \n- Existing Alternatives:\n- Angel\n- Hirist\nSolution:\n- Develop a technology that allows both employee and employer to find relevant Job/Employee\nKey Metrics:\n- A Logical implemented CV\n- Online Interview Features with coding Assessment\nUnique Value Proposition:\n- Users can truly find what they're looking for\n- Skills will help to get Job for Employee\n- High Level Concept:\n- Need to use the good backend to  Show Real-Time Data for interview features\nUnfair Advantage:\n- Innovation\nChannels:\n- User References\nCustomer Segment:\n- All Employees/Employers/Students\n- Early Adopters:\n- People from Corona  affected  Area\nCost Structure:\n- Hosting\n- Development\n- Marketing\nRevenue Streams:\n- Investment\n- Advertising\n- Staffing firm (b2b)"
+    "Problem:\n- Hard to find a suitable employee\n- Hard to find a suitable job\n- Complicated Interview Problems \n- Existing Alternatives:\n- Angel\n- Hirist\nSolution:\n- Develop a technology that allows both employee and employer to find relevant Job/Employee\nKey Metrics:\n- A Logical implemented CV\n- Online Interview Features with coding Assessment\nUnique Value Proposition:\n- Users can truly find what they're looking for\n- Skills will help to get Job for Employee\n- High Level Concept:\n- Need to use the good backend to  Show Real-Time Data for interview features\nUnfair Advantage:\n- Innovation\nChannels:\n- User References\nCustomer Segment:\n- All Employees / Employers / Students\n- Early Adopters:\n- People from Corona  affected  Area\nCost Structure:\n- Hosting\n- Development\n- Marketing\nRevenue Streams:\n- Investment\n- Advertising\n- Staffing firm (b2b)"
   );
   const [data, setData] = React.useState({
     payload: "",
@@ -102,7 +102,6 @@ export default function FullWidthGrid(props) {
                   clickable
                   avatar={<ViewCompactIcon />}
                   label="Lean Canvas"
-                  onClick={handleClick2}
                   variant="outlined"
                 />
               </Link>
